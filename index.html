@@ -2,21 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Happy Birthday 🎉</title>
+    <title>🎉 Happy Birthday 🎂</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <h1>🎂 Happy Birthday 🎂</h1>
-        <h2>Dear My Friend</h2>
-        <p>May your life be full of happiness and success 🎈</p>
-        <button onclick="showMessage()">Click for Surprise 🎁</button>
-        <p id="surprise" class="hidden">
-            🎉 Stay blessed and keep smiling always 🎉
-        </p>
+
+<!-- Floating balloons -->
+<div class="balloons">
+    <span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span>
+</div>
+
+<div class="container">
+    <h1 class="title">🎉 Happy Birthday 🎉</h1>
+    <h2 class="name">Dear <span>Ashu</span> 💖</h2>
+
+    <div class="cake">🎂</div>
+
+    <p class="message">
+        May your life be filled with happiness, love, success  
+        and unlimited smiles 😊✨
+    </p>
+
+    <button onclick="reveal()">Click for Surprise 🎁</button>
+
+    <div id="surprise" class="hidden">
+        <p>🎊 You are special and amazing 🎊</p>
+        <p>🌟 Keep shining always 🌟</p>
     </div>
 
-    <script src="script.js"></script>
+    <audio id="music" loop>
+        <source src="assets/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="playMusic()">🎵 Play Music</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
